@@ -1,0 +1,30 @@
+{
+  "name": "black-firebase-auth",
+  "publisher": "black",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "activationEvents": [
+    "onAuthenticationRequest:firebase"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "authentication": [
+      {
+        "id": "firebase",
+        "label": "Google"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "18.x",
+    "typescript": "^5.0.0"
+  }
+}
